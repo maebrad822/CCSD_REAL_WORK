@@ -3,13 +3,16 @@
 <head>
 	<title></title>
 	<script type="text/javascript">
-	function CalculateBMI()
+	function CalculateBMI(weight * 703 /(height * height))
 	{
 		var w, h, r;
 		w = document.getElementById( "w" ).value;
 		h = document.getElementById( "h" ).value;
+		r = document.getElementById( "r" ).value;
+		var result = CalculateBMI;
 
-		window.alert( "Your weight is " + w );
+		window.alert( "Your BMI is " + r );
+		return result;
 	}
 	</script>
 </head>
@@ -17,7 +20,7 @@
 <form>
 	Weight(in lbs)<input type="text" name="w" id="w">
 	<br/>
-	Height (in ft)<input type="text" name="h" id="h">
+	Height (in inches)<input type="text" name="h" id="h">
 	<br/>
 	<input type="button" name="b" id="b" value="Calculate BMI" onclick="CalculateBMI()">
 	<br/>
