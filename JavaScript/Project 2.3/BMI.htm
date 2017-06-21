@@ -8,11 +8,13 @@
 		var w, h, r;
 		w = document.getElementById( "w" ).value;
 		h = document.getElementById( "h" ).value;
-		r = document.getElementById( "r" ).value;
-		var result = CalculateBMI;
+		
+		w = parseInt( w );
+		h = parseInt( h );
+		var bmi = ( w * 703 ) / (( h  )*( h ));
 
-		window.alert( "Your BMI is " + r );
-		return result;
+		document.getElementById( "r" ).value = bmi.toString();
+		window.alert( "Your BMI is " + bmi );
 	}
 	</script>
 </head>
